@@ -102,8 +102,7 @@ body {
 }
 
 .navigation-link-botton {
-  padding-left: 34px;
-  padding-right: 34px;
+  padding: 8px 34px;
   margin-right: 70px;
   margin-left: 33px;
   margin-top: auto;
@@ -127,10 +126,11 @@ body {
 
 .hero {
   min-height: 485px;
-  background-color: #000000;
+  background-color: #0d0e0d;
   background-image:url("../images/svg/dcor.svg"), url("../images/jpg/background-3.jpg");
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
+  background-position: 0 428px, 0 0;
 }
 
 .hero-img {
@@ -142,7 +142,12 @@ body {
   text-align: center;
 }
 
+.adventages-container {
+  min-height: 261px;
+}
+
 .text-lead {
+  padding-top: 69px;
   width: 620px;
   margin: 0 auto;
   font-weight: 700;
@@ -173,6 +178,7 @@ body {
 
 .advantages-item-container {
   padding: 0 85px;
+  padding-top: 102px;
   width: 230px;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -182,6 +188,7 @@ body {
 .adventages-item {
   width: 230px;
   padding: 0 85px;
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .adventages-item-visible {
@@ -189,6 +196,7 @@ body {
 }
 
 .adventages-title {
+  padding-top: 112.5px;
   margin: 0;
   font-size: 24px;
   line-height: 28px;
@@ -205,10 +213,12 @@ body {
 }
 
 .adventages-text {
+  padding-bottom: 112.5px;
   margin: 0;
 }
 
 .services-container {
+  min-height: 246px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -216,6 +226,7 @@ body {
 
 .services-text-lead {
   width: 505px;
+  padding-top: 64px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
@@ -232,6 +243,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   text-align: center;
 }
@@ -271,12 +283,14 @@ body {
 }
 
 .search {
+  min-height: 406px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
 .search-title {
+  padding-top: 96px;
   margin: 0;
   font-size: 30px;
   line-height: 36px;
@@ -300,13 +314,15 @@ body {
 }
 
 .subscride {
-  min-height: 415px;
+  min-height: 412px;
   background-image: url("../images/jpg/background-1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #0f100e;
 }
 
 .subscride-container {
+  padding-top: 96px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -326,6 +342,10 @@ body {
 }
 
 .field {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  width: 452px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -340,6 +360,7 @@ body {
   color: #ffffff;
   background: #82B3D3;
   text-transform: uppercase;
+  padding: 8px 50px;
 }
 
 .contacts {
@@ -355,13 +376,14 @@ body {
 }
 
 .main-filter-container {
-  min-height: 412px;
+  min-height: 403px;
   font-size: 18px;
   line-height: 23px;
   background-image: url("../images/jpg/background-2.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
+  background-color: rgb(18, 19, 17);
 }
 
 .inner-header-title {
@@ -374,16 +396,23 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  list-style: none;
 }
 
 .breadcruds-button-home {
+  padding: 10px;
   background-image: url("../images/svg/home.svg");
   background-repeat: no-repeat;
+  background-position: 5px 17px;
 }
 
 .breadcruds-button-arrow {
+  padding: 10px;
   background-image: url("../images/svg/arrow.svg");
   background-repeat: no-repeat;
+  background-position: 7px 18px;
 }
 
 .breadcruds-button {
@@ -428,6 +457,7 @@ body {
 }
 
 .catalog-container {
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -478,6 +508,9 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .catalog-title {
@@ -489,23 +522,31 @@ body {
 }
 
 .button-catalog-list {
+  padding: 10px;
   background-image: url("../images/svg/list.svg");
   background-repeat: no-repeat;
+  background-position: 0 20px;
 }
 
 .button-catalog-cards {
+  padding: 10px;
   background-image: url("../images/svg/cards.svg");
   background-repeat: no-repeat;
+  background-position: 0 20px;
 }
 
 .button-catalog {
+  padding: 10px;
   background-image: url("../images/svg/home-page.svg");
   background-repeat: no-repeat;
+  background-position: 0 20px;
 }
 
 .catalog-cart-list {
   padding: 0;
   margin: 0;
+  padding-top: 46.50px;
+  padding-bottom: 40px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -549,21 +590,44 @@ body {
   text-transform: uppercase;
 }
 
+.bottom-gray {
+  font-weight: 400;
+  color: #333333;
+  background: #F2F2F2;
+  text-transform: uppercase;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .pagination-list {
+  width: 1060px;
   margin: 0;
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   gap: 8px;
-}
-
-.pagination-item {
-  padding: 0 13px;
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+}
+
+.pagination-item {
+  padding: 0 13px;
+}
+
+.pagination-gray {
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.pagination-white {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
 }
 
 .bottom-brown {
@@ -577,29 +641,11 @@ body {
 .botten-green {
   background: #7DB54F;
 }
-.bottom-white {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-}
 
 .product-cart-text {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-}
-
-.bottom-gray {
-  font-weight: 400;
-  color: #333333;
-  background: #F2F2F2;
-  text-transform: uppercase;
-  padding: 8px 0;
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .container-star {
@@ -609,7 +655,13 @@ body {
   background-repeat: no-repeat;
 }
 
-.subscride-title {
+.subscride-catalog {
+  min-height: 415px;
+}
+
+.subscride-title-catalog {
+  margin: 0;
+  padding-top: 96px;
   color: #000000;
 }
 
@@ -646,6 +698,8 @@ body {
 .footer-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 10px;
+  margin: 0;
   justify-content: space-between;
   width: 142px;
   list-style: none;
