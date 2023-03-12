@@ -47,8 +47,12 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ol class="breadcruds">
             <li class="breadcruds-item">
-              <a href="index.html">
+              <a class="breadcruds-link" href="index.html">
                 <span class="visually-hidden">Иконка с переходом на главную страницу</span>
+                <svg class="breadcruds-imeges" width="13" height="13" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
+                  <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
+                </svg>
               </a>
             </li>
             <li>
@@ -120,10 +124,10 @@
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
-                    <input class="range-input" type="number" value="0" name="min-price" style="width: 103px">
+                    <input class="range-input" type="text" value="0" name="min-price" style="width: 103px">
                   </label>
-                  <label class="catalog-filter-label">
-                    <input class="range-input-right" type="number" value="9000" name="max-price" style="width: 103px">
+                  <label class="catalog-filter-label-max">
+                    <input class="range-input-right" type="text" value="9000" name="max-price" style="width: 103px">
                   </label>
                 </div>
                 <div class="range-scale">

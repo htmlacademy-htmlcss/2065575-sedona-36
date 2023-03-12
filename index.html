@@ -159,14 +159,14 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="field-group-date">
               <p class="check-in-date-text">Дата Заезда:</p>
               <label class="check-in-date-control" for="check-in-date-text">
                 <input class="check-in-date-field" type="text" id="check-in-date-text" name="check-in-date-text" value="27 апреля 2020">
               </label>
             </fieldset>
-            <p class="field-text field-text-color">Мы не можем отправить вас в прошлое.</p>
+            <p class="field-text-color">Мы не можем отправить вас в прошлое.</p>
             <fieldset class="field-group-date">
               <p class="check-in-date">Дата Выезда:</p>
               <label class="check-in-date-control" for="check-in-date">
@@ -178,12 +178,20 @@
               <fieldset class="field-group-adults">
                 <p class="check-in-departure-date">Взрослые:</p>
                 <label class="adults-control" for="adults">
-                  <button class="min-button" type="number" id="adults" name="adults"></button>
-                  <input class="adults-field" type="number" id="adults" name="adults" value="2">
-                  <button class="max-button"></button>
+                  <button class="min-button" type="button">
+                    <svg width="14" height="2" fill="rgba(117, 97, 87, 0.3);" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <input class="adults-field" type="text" id="adults" name="adults" value="2">
+                  <button class="max-button" type="button">
+                    <svg width="14" height="14" fill="rgba(117, 97, 87, 0.3);" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
                 </label>
               </fieldset>
-              <fieldset class="field-group-children field-group-adults">
+              <fieldset class="field-group-children">
                 <span class="form-label form-label-icon">
                   <p class="check-in-departure-date">Дети:</p>
                   <span class="tooltip">
@@ -197,9 +205,17 @@
                   </span>
                 </span>
                 <label class="children-control adults-control" for="children">
-                  <button class="min-button"></button>
-                  <input class="children-field adults-field" type="number" id="children" name="children" value="2">
-                  <button class="max-button"></button>
+                  <button class="min-button" type="button">
+                    <svg width="14" height="2" fill="rgba(117, 97, 87, 0.3);" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <input class="adults-field" type="text" id="children" name="children" value="2">
+                  <button class="max-button" type="button">
+                    <svg width="14" height="14" fill="rgba(117, 97, 87, 0.3);" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
                 </label>
               </fieldset>
             </div>
