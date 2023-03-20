@@ -438,7 +438,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background: #756157;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .search-link-button:hover,
@@ -570,17 +570,12 @@ body {
   text-decoration: none;
 }
 
-.breadcruds-link {
-  outline-style: none;
-}
-
 .breadcruds-imeges:hover {
   fill: rgba(255, 255, 255, 0.6);
 }
 
-.breadcruds-imeges:focus {
+.breadcruds-imeges:focus-within {
   fill: #FFFFFF;
-  outline-style: none;
 }
 
 .breadcruds-imeges:active {
@@ -593,7 +588,6 @@ body {
 
 .breadcruds-button:focus {
   color: #FFFFFF;
-  outline-style: none;
 }
 
 .breadcruds-button:active {
@@ -665,7 +659,7 @@ body {
   width: 20px;
   height: 19px;
   background-color: #FFFFFF;
-  border-radius: 4px;
+  border-radius: 3px;
   border: none;
 }
 
@@ -823,6 +817,7 @@ body {
   border: none;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
+  outline-style: none;
 }
 
 .catalog-filter-label:active {
@@ -836,6 +831,7 @@ body {
   border: none;
   background: #F2F2F2;
   border-radius: 0 4px 4px 0;
+  outline-style: none;
 }
 
 .catalog-filter-label:focus-within {
@@ -953,8 +949,10 @@ body {
   margin: 0;
   padding: 7px 0;
   margin-right: 124px;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  font-family: 'PT Sans';
   text-transform: uppercase;
   color: #000000;
 }
@@ -963,7 +961,7 @@ body {
   min-width: 292px;
   padding: 12px 20px;
   padding-right: 40px;
-  font-family: "PT Sans,  sans-serif";
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   background-image: url("../images/svg/birdie.svg");
@@ -1331,7 +1329,7 @@ body {
 
 .hero {
   min-height: 485px;
-  background-color: #0d0e0d;
+  background-color: #466887;
   background-image: url("../images/svg/dcor.svg"), url("../images/jpg/background-3.jpg");
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
@@ -1435,7 +1433,7 @@ body {
 
 .modal-close-button:focus {
   background: #E6E6E6;
-  outline-style: 3px solid #83B3D3;
+  outline: #83B3D3;
 }
 
 .modal-close-button:active:before {
@@ -1467,20 +1465,24 @@ body {
 .check-in-date-text {
   min-width: 119px;
   margin: 0;
-  margin-right: 19px;
-  margin-top: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
+  padding-right: 19px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  font-family: 'PT Sans,  sans-serif';
+  font-family: 'PT Sans';
   color: #000000;
 }
 
 .check-in-date {
   min-width: 119px;
   margin: 0;
-  margin-right: 19px;
-  margin-top: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
+  padding-right: 19px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1496,7 +1498,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-family: 'PT Sans,  sans-serif';
+  font-family: 'PT Sans';
   background: #F2F2F2;
   border-radius: 4px;
   border: none;
@@ -1527,9 +1529,12 @@ body {
 }
 
 .check-in-departure-date {
+  min-width: 119px;
   margin: 0;
   margin-top: auto;
   margin-bottom: auto;
+  padding: 0;
+  padding-right: 19px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1588,8 +1593,11 @@ body {
 
 .tooltip-toggle {
   display: block;
+  width: 40px;
+  height: 48px;
   margin: 0;
   padding: 0;
+  background: #F2F2F2;
   background-color: transparent;
   border: none;
   outline-style: none;
@@ -1631,12 +1639,6 @@ body {
   background: #F2F2F2;
 }
 
-.min-botton-container {
-  width: 40px;
-  height: 48px;
-  background: #F2F2F2;
-}
-
 .adults-control .min-button,
 .adults-control .adults-field,
 .adults-control .max-button {
@@ -1654,11 +1656,32 @@ body {
   outline-style: none;
 }
 
-.min-button svg {
-  position: relative;
-  top: 6px;
-  left: 8px;
-  fill: rgba(117, 97, 87, 0.3);
+.min-button {
+  display: block;
+  width: 40px;
+  height: 48px;
+  border: none;
+  background: #F2F2F2;
+}
+
+.icon-minus::before {
+  position: absolute;
+  content: "";
+  bottom: 193px;
+  right: 480px;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+.icon-minus-right::before {
+  position: absolute;
+  content: "";
+  bottom: 193px;
+  right: 154px;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .max-button {
@@ -1670,36 +1693,41 @@ body {
   outline-style: none;
 }
 
-.adults-control .min-button:hover svg,
-.adults-control .max-button:hover svg {
-  fill: #000000;
+.icon-minus:hover::before {
+  background: #000000;
 }
 
-.min-button:focus svg{
-  top: 8px;
-  left: 2px;
-  padding: 9px 3px;
-  fill: #000000;
+.icon-minus:focus::before {
+  background: #000000;
   border: 3px solid #82B3D3;
   border-radius: 4px;
   outline-style: none;
 }
 
-.max-button:focus svg {
+.icon-minus-right:hover::before {
+  background: #000000;
+}
+
+.icon-minus-right:focus::before {
+  background: #000000;
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
+  outline-style: none;
+}
+
+.max-button:focus {
   fill: #000000;
   padding: 3px;
   border: 3px solid #82B3D3;
   border-radius: 4px;
 }
 
-.max-button:active svg {
+.max-button:active {
   border: none;
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.min-button:active svg {
-  top: 11px;
-  left: 4px;
+.min-button:active {
   border: none;
   fill: rgba(117, 97, 87, 0.3);
 }
