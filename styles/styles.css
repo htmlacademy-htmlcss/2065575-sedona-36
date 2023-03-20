@@ -1365,11 +1365,10 @@ body {
   background-position: center;
 }
 
-/*
+
 .modal-container-close {
   display: none;
 }
-*/
 
 .modal-container {
   display: flex;
